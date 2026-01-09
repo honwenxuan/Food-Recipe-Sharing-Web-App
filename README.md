@@ -21,9 +21,10 @@ How to Use (First-Time User):
 5. Run `copy .env.example .env`
 6. Open your `.env` file and check `DB_DATABASE`, `DB_USERNAME`, `DB_PASSWORD`, and MAKE SURE your `DB_PORT` is same as your XAMPP
 7. Run `php artisan key:generate`
-8. Create a database call **"foodbank" (utf8mb4_unicode_ci)** and Run php artisan migrate
-9. Run `npm install` and `npm run dev` / `npm install && npm run dev`
-10. Open new cmd and run `php artisan serve`
+8. Run **Apache** and **MySQL** in XAMPP / WAMP, and open **phpMyAdmin**
+9. Create a database call **"foodbank" (utf8mb4_unicode_ci)** and Run `php artisan migrate`
+10. Run `npm install` and `npm run dev` / `npm install && npm run dev`
+11. Open new cmd and run `php artisan serve`
 
 To run server:
 1. Run `npm run dev`
