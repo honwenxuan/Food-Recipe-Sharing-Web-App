@@ -8,7 +8,7 @@ Web Objectives:
 
 How to Use (First-Time User):
 1. Clone the repo in your desired directory by running `git clone <URL>`
-2. Make sure you have PHP and Composer installed on your device. (Can install XAMPP if u don't have PHP installed yet)
+2. Make sure you have PHP and Composer installed on your device. (Can install XAMPP if u don't have PHP installed yet, and download Composer from https://getcomposer.org/Composer-Setup.exe)
 3. Run `composer install` in your project directory to install all dependencies required to run your project
 4. Run **copy .env.example .env**
 5. Open your .env file and check DB_DATABASE, DB_USERNAME, DB_PASSWORD, and MAKE SURE your DB_PORT is same as your wamp
