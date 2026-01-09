@@ -18,16 +18,16 @@ How to Use (First-Time User):
     6. Save the file and close the text editor.
     7. Restart PowerShell so it picks up the new setting.
 4. Run `composer install` in your project directory to install all dependencies required to run your project
-5. Run **copy .env.example .env**
-6. Open your .env file and check DB_DATABASE, DB_USERNAME, DB_PASSWORD, and MAKE SURE your DB_PORT is same as your wamp
-7. Run **php artisan key:generate**
+5. Run `copy .env.example .env`
+6. Open your `.env` file and check `DB_DATABASE`, `DB_USERNAME`, `DB_PASSWORD`, and MAKE SURE your `DB_PORT` is same as your XAMPP
+7. Run `php artisan key:generate`
 8. Create a database call **"foodbank" (utf8mb4_unicode_ci)** and Run php artisan migrate
-9. Run **npm install and npm run dev / npm install && npm run dev**
-10. Open new cmd and run **php artisan serve**
+9. Run `npm install` and `npm run dev` / `npm install && npm run dev`
+10. Open new cmd and run `php artisan serve`
 
 To run server:
-1. Run npm run dev
-2. Open new terminal and run php artisan serve
+1. Run `npm run dev`
+2. Open new terminal and run `php artisan serve`
 
 
 Sample Image of the Web App:
