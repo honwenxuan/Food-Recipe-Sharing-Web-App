@@ -7,18 +7,29 @@ Web Objectives:
 - Allow administrators to perform CRUD operations for recipe management.
 
 How to Use (First-Time User):
-1. clone the repo in your desired directory by running git clone <URL>
-2. run **composer install** in your project directory to install all dependencies required to run your project
-3. run **copy .env.example .env**
-4. Open your .env file and check DB_DATABASE, DB_USERNAME, DB_PASSWORD, and MAKE SURE your DB_PORT is same as your wamp
-5. Run **php artisan key:generate**
-6. Create a database call **"foodbank" (utf8mb4_unicode_ci)** and Run php artisan migrate
-7. Run **npm install and npm run dev / npm install && npm run dev**
-8. Open new cmd and run **php artisan serve**
+1. Clone the repo in your desired directory by running `git clone <URL>`
+2. Make sure you have PHP and Composer installed on your device. (Can install XAMPP if u don't have PHP installed yet, and download Composer from https://getcomposer.org/Composer-Setup.exe)
+3. Before you run `composer install`, do the following steps so it can install faster (tell PHP to turn on its zip tool so it can unzip the `.zip` files (dist)):
+    1. Open your XAMPP Control Panel.
+    2. Click the Config button next to Apache and select PHP (php.ini). (Or go to `C:\xampp\php\php.ini`).
+    3. Press `Ctrl + F` and search for: `extension=zip`.
+    4. You will likely see a semicolon at the start: `;extension=zip`.
+    5. Remove the semicolon.
+    6. Save the file and close the text editor.
+    7. Restart PowerShell so it picks up the new setting.
+4. Run `composer install` in your project directory to install all dependencies required to run your project
+5. Run `copy .env.example .env`
+6. Open your `.env` file and check `DB_DATABASE`, `DB_USERNAME`, `DB_PASSWORD`, and MAKE SURE your `DB_PORT` is same as your XAMPP
+7. Run `php artisan key:generate`
+8. Run **Apache** and **MySQL** in XAMPP / WAMP, and open **phpMyAdmin**
+9. Create a new database in **phpMyAdmin** call **"foodbank" (utf8mb4_unicode_ci)**
+10. Run `php artisan migrate`, then run `php artisan db:seed`
+11. Run `npm install` and `npm run dev` / `npm install && npm run dev` (Need to have Node.js installed)
+12. Open new cmd and run `php artisan serve`
 
 To run server:
-1. Run npm run dev
-2. Open new terminal and run php artisan serve
+1. Run `npm run dev`
+2. Open new terminal and run `php artisan serve`
 
 
 Sample Image of the Web App:
